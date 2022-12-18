@@ -1,0 +1,10 @@
+{
+  "item.moreores.mithril" : "Mithril",
+  "item.moreores.mithril_ingot" : "Mithril Ingot",
+
+  "block.moreores.mithril_block" : "Block of Mithril",
+  "block.moreores.mithril_ore" : "Mithril Ore",
+  "block.moreores.deepslate_mithril_ore" : "Deepslate Mithril Ore",
+
+  "itemGroup.moreorestab" : "More Ores"
+}

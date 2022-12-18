@@ -1,6 +1,6 @@
 {
   "parent" : "item/generated",
   "textures" : {
-    "layer0" : "breakingbadmod:item/thatbluestuff"
+    "layer0" : "moreores:item/mithril_ingot"
   }
 }
