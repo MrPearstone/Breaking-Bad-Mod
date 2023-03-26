@@ -66,6 +66,25 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(7f).requiresCorrectToolForDrops(), UniformInt.of(4, 8)), ModCreativeModeTab.MOREORES_TAB);
 
+    public static final RegistryObject<Block> LIMESTONE = registerBlock("limestone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(5f)), ModCreativeModeTab.MOREORES_TAB);
+
+    public static final RegistryObject<Block> POLISHED_LIMESTONE = registerBlock("polished_limestone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(5f)), ModCreativeModeTab.MOREORES_TAB);
+
+    public static final RegistryObject<Block> MARBLE = registerBlock("marble",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(5f)), ModCreativeModeTab.MOREORES_TAB);
+
+    public static final RegistryObject<Block> MARBLE_BRICKS = registerBlock("marble_bricks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(5f)), ModCreativeModeTab.MOREORES_TAB);
+
+    public static final RegistryObject<Block> MARBLE_PILLAR = registerBlock("marble_pillar",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(5f)), ModCreativeModeTab.MOREORES_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

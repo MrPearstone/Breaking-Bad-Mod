@@ -9,6 +9,7 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.pearstone.moreores.MoreOres;
@@ -37,6 +38,10 @@ public class ModConfiguredFeatures {
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_RUBY_ORE.get().defaultBlockState())
     ));
 
+    public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_LIMESTONE_ORES = Suppliers.memoize(() -> List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.LIMESTONE.get().defaultBlockState())
+    ));
+
     public static final Supplier<List<OreConfiguration.TargetBlockState>> VOIDSTONE_ORES = Suppliers.memoize(() -> List.of(
             OreConfiguration.target(new BlockMatchTest(Blocks.END_STONE), ModBlocks.VOIDSTONE_ORE.get().defaultBlockState())
     ));
@@ -55,6 +60,8 @@ public class ModConfiguredFeatures {
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_SILVER_ORES.get(), 6)));
     public static final RegistryObject<ConfiguredFeature<?, ?>> RUBY_ORE = CONFIGURED_FEATURES.register("ruby_ore",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_RUBY_ORES.get(), 5)));
+    public static final RegistryObject<ConfiguredFeature<?, ?>> LIMESTONE = CONFIGURED_FEATURES.register("limestone",
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_LIMESTONE_ORES.get(), 64)));
     public static final RegistryObject<ConfiguredFeature<?, ?>> VOIDSTONE_ORE = CONFIGURED_FEATURES.register("voidstone_ore",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(VOIDSTONE_ORES.get(), 3)));
     public static final RegistryObject<ConfiguredFeature<?, ?>> SULFUR_ORE = CONFIGURED_FEATURES.register("sulfur_ore",

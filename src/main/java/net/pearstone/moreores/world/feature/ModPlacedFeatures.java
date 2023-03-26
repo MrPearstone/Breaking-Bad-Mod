@@ -26,6 +26,10 @@ public class ModPlacedFeatures {
             () -> new PlacedFeature(ModConfiguredFeatures.RUBY_ORE.getHolder().get(),
                     commonOrePlacement(5, // Veins per chunk
                             HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80)))));
+    public static final RegistryObject<PlacedFeature> LIMESTONE_PLACED = PLACED_FEATURES.register("limestone_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.LIMESTONE.getHolder().get(),
+                    commonOrePlacement(7, // Veins per chunk
+                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(100)))));
     public static final RegistryObject<PlacedFeature> VOIDSTONE_ORE_PLACED = PLACED_FEATURES.register("voidstone_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.VOIDSTONE_ORE.getHolder().get(),
                     commonOrePlacement(5, // Veins per chunk

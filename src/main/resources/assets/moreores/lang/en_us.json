@@ -55,6 +55,11 @@
   "block.moreores.sulfur_ore" : "Sulfur Ore",
   "block.moreores.cobalt_block" : "Block of Cobalt",
   "block.moreores.cobalt_ore" : "Cobalt Ore",
+  "block.moreores.limestone" : "Limestone",
+  "block.moreores.polished_limestone" : "Polished Limestone",
+  "block.moreores.marble" : "Marble",
+  "block.moreores.marble_bricks" : "Marble Bricks",
+  "block.moreores.marble_pillar" : "Marble Pillar",
 
   "itemGroup.moreorestab" : "More Ores"
 }

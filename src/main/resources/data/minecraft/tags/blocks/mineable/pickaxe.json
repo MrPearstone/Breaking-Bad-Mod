@@ -14,6 +14,11 @@
     "moreores:deepslate_ruby_ore",
     "moreores:sulfur_ore",
     "moreores:cobalt_block",
-    "moreores:cobalt_ore"
+    "moreores:cobalt_ore",
+    "moreores:limestone",
+    "moreores:polished_limestone",
+    "moreores:marble",
+    "moreores:marble_bricks",
+    "moreores:marble_pillar"
   ]
 }
