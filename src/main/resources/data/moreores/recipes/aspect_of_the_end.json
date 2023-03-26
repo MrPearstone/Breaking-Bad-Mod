@@ -1,0 +1,22 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "pattern" : [
+    "  Y",
+    " X ",
+    "#  "
+  ],
+  "key" : {
+    "#" : {
+      "item" : "moreores:voidstone_handle"
+    },
+    "X" : {
+      "item" : "moreores:transmission_tuner"
+    },
+    "Y" : {
+      "item" : "minecraft:ender_eye"
+    }
+  },
+  "result" : {
+    "item" : "moreores:aspect_of_the_end"
+  }
+}

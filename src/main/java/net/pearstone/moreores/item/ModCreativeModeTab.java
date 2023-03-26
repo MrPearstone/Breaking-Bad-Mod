@@ -8,7 +8,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab MOREORES_TAB = new CreativeModeTab("moreorestab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.MITHRIL.get());
+            return new ItemStack(ModItems.MITHRIL_INGOT.get());
         }
     };
 }

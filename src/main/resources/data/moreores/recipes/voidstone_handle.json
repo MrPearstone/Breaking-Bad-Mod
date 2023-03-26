@@ -1,0 +1,19 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "pattern" : [
+    " X ",
+    " X ",
+    " # "
+  ],
+  "key" : {
+    "X" : {
+      "item" : "moreores:voidstone"
+    },
+    "#" : {
+      "item" : "moreores:voidstone_block"
+    }
+  },
+  "result" : {
+    "item" : "moreores:voidstone_handle"
+  }
+}

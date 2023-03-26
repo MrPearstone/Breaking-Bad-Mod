@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "moreores:mithril_block",
+    "moreores:mithril_ore",
+    "moreores:silver_ore",
+    "moreores:deepslate_mithril_ore",
+    "moreores:silver_block",
+    "moreores:deepslate_silver_ore",
+    "moreores:ruby_block",
+    "moreores:ruby_ore",
+    "moreores:deepslate_ruby_ore",
+    "moreores:sulfur_ore"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "moreores:voidstone_ore",
+    "moreores:voidstone_block",
+    "moreores:cobalt_block",
+    "moreores:cobalt_ore"
+  ]
+}
